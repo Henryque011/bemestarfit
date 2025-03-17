@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*  font-family: "Montserrat" - font-family: "Bebas Neue" */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font_titles:"Bebas Neue";
+    --font_primary:"Montserrat";
+}
+
+.site {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
