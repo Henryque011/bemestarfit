@@ -9,15 +9,28 @@
 :root {
     --font_titles: "Bebas Neue";
     --font_primary: "Montserrat";
-    --black: #000
+    --black: #000;
+    --dark_grey: #0D0D0D;
+    --strong_red: #F20519;
+    --medium_red: #F20530;
+    --light: #F2F2F2;
 }
 
 header {
     background-color: var(--black);
+    position: fixed;
+    width: 100%;
 }
 
 .active {
-    color: red !important;
+    color: var(--strong_red) !important;
+}
+
+.side {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
 }
 
 .site {
@@ -54,15 +67,61 @@ header {
                 text-decoration: none;
                 color: white;
             }
+
+            li a:hover {
+                transition: 1s;
+                transform: scale(1.2);
+                color: var(--strong_red);
+            }
         }
 
         div {
             display: flex;
-            margin: 0 10px;
+            margin: 0 5px;
+            align-items: center;
+            text-align: center;
 
             .matricula a,
             .login a {
                 text-decoration: none;
+                text-decoration: none;
+                color: white;
+                align-items: center;
+            }
+
+            .login a i {
+                margin: 5px;
+            }
+
+            .matricula a:hover,
+            .login a:hover {
+                transition: 1s;
+                color: var(--strong_red);
+            }
+        }
+    }
+}
+
+.start {
+    height: 760px;
+    background-image: url(../img/banner_home.svg);
+    background-position: bottom;
+    background-size: cover;
+    box-shadow: inset 10px 10px 10px 10px black;
+    padding: 105px 0 0 0;
+    color: white;
+
+    .site {
+        .side {
+            height: 760px;
+            background-color: grey;
+            justify-content: space-between;
+
+            .redes_sociais {
+                ul li {
+                    font-size: 21px;
+                    margin: 10px 0;
+                }
             }
         }
     }
