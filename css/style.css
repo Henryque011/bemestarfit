@@ -26,11 +26,22 @@ header {
     color: var(--strong_red) !important;
 }
 
+.line {
+    width: 80px;
+    height: 1px;
+    margin: 0 5px 0 0;
+    background-color: var(--strong_red);
+}
+
 .side {
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
+}
+
+.emphasis {
+    color: var(--strong_red);
 }
 
 .site {
@@ -112,15 +123,46 @@ header {
     color: white;
 
     .site {
-        .side {
-            height: 760px;
-            background-color: grey;
-            justify-content: space-between;
+        .redes_sociais {
+            ul li {
+                font-size: 21pt;
+                margin: 25px 0;
 
-            .redes_sociais {
-                ul li {
-                    font-size: 21px;
-                    margin: 10px 0;
+                i {
+                    color: white;
+                }
+            }
+        }
+
+        .titles_banner {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 760px;
+            flex-direction: column;
+            text-transform: uppercase;
+
+            h2 {
+                font-size: 20pt;
+                font-family: var(--font_titles);
+            }
+
+            div:nth-child(1) {
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+
+            div:nth-child(2) {
+                .carrousel_banner {
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                        font-size: 48pt;
+                        font-family: var(--font_titles);
+                    }
                 }
             }
         }
