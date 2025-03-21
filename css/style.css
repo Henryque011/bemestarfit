@@ -13,6 +13,7 @@
     --dark_grey: #0D0D0D;
     --strong_red: #F20519;
     --medium_red: #F20530;
+    --transparent_red: rgba(242, 5, 25, 0.5);
     --light: #F2F2F2;
 }
 
@@ -162,6 +163,69 @@ header {
                     h3 {
                         font-size: 48pt;
                         font-family: var(--font_titles);
+                    }
+                }
+            }
+
+            div:nth-child(4) {
+                .button {
+                    align-items: center;
+                    text-align: center;
+                    padding: -1em 2em;
+                    border: none;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    color: white;
+                    transition: all 1000ms;
+                    font-size: 12px;
+                    overflow: hidden;
+                    outline: 2px solid var(--strong_red);
+                }
+
+                button:hover {
+                    color: #ffffff;
+                    transform: scale(1.1);
+                    outline: 2px solid var(--strong_red);
+                    box-shadow: 4px 5px 17px -4px var(--transparent_red);
+                }
+
+                button::before {
+                    content: "";
+                    position: absolute;
+                    left: -50px;
+                    top: 0;
+                    width: 0;
+                    height: 100%;
+                    background-color: var(--medium_red);
+                    transform: skewX(45deg);
+                    z-index: -1;
+                    transition: width 1000ms;
+                }
+
+                button:hover::before {
+                    width: 250%;
+                }
+
+                button {
+                    width: 250px;
+                    height: 50px;
+                    border-radius: 20px;
+                    margin: 15px 0 0 0;
+                    border: none;
+                    background-color: var(--transparent_red);
+                    cursor: pointer;
+                    color: white;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-family: var(--font_primary);
+
+                    i {
+                        font-size: 10pt;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
             }
