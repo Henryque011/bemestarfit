@@ -59,6 +59,7 @@ header {
         font-family: var(--font_primary);
         text-transform: uppercase;
         font-size: larger;
+        z-index: 10px;
 
         div {
             a {
@@ -143,6 +144,7 @@ header {
             height: 760px;
             flex-direction: column;
             text-transform: uppercase;
+            position: static;
 
             h2 {
                 font-size: 20pt;
@@ -167,6 +169,7 @@ header {
                         h3 {
                             font-size: 48pt;
                             font-family: var(--font_titles);
+                            color: white;
                         }
                     }
                 }
