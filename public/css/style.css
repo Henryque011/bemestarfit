@@ -17,6 +17,10 @@
     --light: #F2F2F2;
 }
 
+body {
+    background: var(--dark_grey);
+}
+
 header {
     background-color: var(--black);
     position: fixed;
@@ -46,6 +50,10 @@ header {
 
 .emphasis {
     color: var(--strong_red);
+}
+
+.space {
+    padding: 10px;
 }
 
 .site {
@@ -93,7 +101,7 @@ header {
 
         div {
             display: flex;
-            margin: 0 5px;
+            margin: 0 10px;
             align-items: center;
             text-align: center;
 
@@ -119,8 +127,8 @@ header {
 }
 
 .start {
-    height: 760px;
-    background-image: url(../img/banner_home.svg);
+    height: 500px;
+    background-image: url(../img/banner_home1.svg);
     background-position: bottom;
     background-size: cover;
     box-shadow: inset 10px 10px 10px 10px black;
@@ -251,6 +259,30 @@ header {
                             align-items: center;
                             text-align: center;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.sobre_nos {
+    .space {
+        padding: 20px;
+    }
+
+    .site {
+        .side {
+            .sobre_txt {
+                div:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 20pt;
+                        font-family: var(--font_titles);
+                        color: var(--light);
                     }
                 }
             }
