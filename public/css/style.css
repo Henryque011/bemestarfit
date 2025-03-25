@@ -21,6 +21,9 @@ header {
     background-color: var(--black);
     position: fixed;
     width: 100%;
+    z-index: 1000;
+    top: 0;
+    position: fixed;
 }
 
 .active {
@@ -123,6 +126,7 @@ header {
     box-shadow: inset 10px 10px 10px 10px black;
     padding: 105px 0 0 0;
     color: white;
+    margin-top: 100px;
 
     .site {
         .redes_sociais {
