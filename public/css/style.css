@@ -285,6 +285,29 @@ header {
                         color: var(--light);
                     }
                 }
+
+                div:nth-child(2) {
+                    h3 {
+                        font-size: 48pt;
+                        font-family: var(--font_titles);
+                        color: var(--light);
+                        text-align: left;
+
+                    }
+                }
+
+                div:nth-child(3) {
+                    width: 450px;
+
+                    p {
+                        padding: 10px 0 0 0;
+
+                        color: var(--light);
+                        font-family: var(--font_primary);
+                        text-indent: initial;
+                        font-size: 20pt;
+                    }
+                }
             }
         }
     }
