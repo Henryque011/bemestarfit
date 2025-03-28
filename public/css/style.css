@@ -395,3 +395,11 @@ header {
         }
     }
 }
+
+.counter-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 2em;
+    font-weight: bold;
+}
