@@ -152,7 +152,7 @@
                     <img src="public/img/logo.svg" alt="">
                 </div>
 
-                <h1>Estatísticas da Academia</h1>
+                <!-- <h1>Estatísticas da Academia</h1>
 
                 <div class="counter-container">
                     <div>
@@ -167,8 +167,12 @@
                         <span id="counter3">0</span>
                         <p>Máquinas</p>
                     </div>
-                </div>
+                </div> -->
 
+                <h1 id="myTargetElement">0</h1>
+                <button onclick="demo.start()">Start</button>
+                <button onclick="demo.reset()">Reset</button>
+                <button onclick="demo.pauseResume()">Pause/Resume</button>
             </article>
         </section>
     </main>
@@ -188,7 +192,18 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
 
+    <script>
+        let demo = new CountUp('myTargetElement', 100, {
+            duration: 2, // duração da animação (em segundos)
+            separator: '.', // separador de milhares
+        });
 
+        if (!demo.error) {
+            demo.start();
+        } else {
+            console.error(demo.error);
+        }
+    </script>
 </body>
 
 </html>
