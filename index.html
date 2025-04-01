@@ -148,69 +148,36 @@
                 </div>
                 <div class="space"></div>
 
-                <!-- <div class="img_test" data-aos="flip-left">
-                    <img src="public/img/logo.svg" alt="">
-                </div> -->
-                <!-- 
-                <h1>Estatísticas da Academia</h1>
-
-                <div class="counter-container">
-                    <div>
-                        <span id="counter1">0</span>
-                        <p>Anos de experiência</p>
-                    </div>
-                    <div>
-                        <span id="counter2">0</span>
-                        <p>Alunos</p>
-                    </div>
-                    <div>
-                        <span id="counter3">0</span>
-                        <p>Máquinas</p>
-                    </div>
-                </div> -->
-
-                <div class="counter-container">
+                <div class="counter-container" data-aos="fade-up" data-aos-duration="3000">
                     <div class="counter-box">
-                        <span id="counter1">0</span>
+                        <p>
+                            + <span id="counter1">0</span>
+                        </p>
                         <p>anos de experiência</p>
                     </div>
                     <div class="separator"></div>
                     <div class="counter-box">
-                        <span id="counter2">0</span>
+                        <p>
+                            + <span id="counter2">0</span>
+                        </p>
                         <p>alunos</p>
                     </div>
                     <div class="separator"></div>
                     <div class="counter-box">
-                        <span id="counter3">0</span>
+                        <p>
+                            + <span id="counter3">0</span>
+                        </p>
                         <p>máquinas</p>
                     </div>
                 </div>
 
+                <div class="space"></div>
+                <img src="public/img/background_ponts.svg" alt="">
             </article>
         </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const options = { duration: 2.5, separator: "." };
-
-            const counter1 = new countUp.CountUp("counter1", 9, options);
-            const counter2 = new countUp.CountUp("counter2", 2000, options);
-            const counter3 = new countUp.CountUp("counter3", 20, options);
-
-            if (!counter1.error) {
-                counter1.start();
-                counter2.start();
-                counter3.start();
-            } else {
-                console.error(counter1.error);
-            }
-        });
-
-    </script>
-
 
     <script src="public/js/scripts.js"></script>
 
@@ -226,6 +193,24 @@
 
     <script>
         AOS.init(); 
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const options = { duration: 5.5, separator: "." };
+
+            const counter1 = new countUp.CountUp("counter1", 9, options);
+            const counter2 = new countUp.CountUp("counter2", 2000, options);
+            const counter3 = new countUp.CountUp("counter3", 20, options);
+
+            if (!counter1.error) {
+                counter1.start();
+                counter2.start();
+                counter3.start();
+            } else {
+                console.error(counter1.error);
+            }
+        });
     </script>
 
 </body>
