@@ -80,7 +80,7 @@
                                         <div class="carousel-item">
                                             <div class="txt_coluns">
                                                 <h3></h3>
-                                                <h3><span class="emphasis">taekowondo</span></h3>
+                                                <h3><span class="emphasis">taekwondo</span></h3>
                                             </div>
                                         </div>
                                         <div class="carousel-item">
@@ -148,11 +148,11 @@
                 </div>
                 <div class="space"></div>
 
-                <div class="img_test" data-aos="flip-left">
+                <!-- <div class="img_test" data-aos="flip-left">
                     <img src="public/img/logo.svg" alt="">
-                </div>
-
-                <!-- <h1>Estatísticas da Academia</h1>
+                </div> -->
+                <!-- 
+                <h1>Estatísticas da Academia</h1>
 
                 <div class="counter-container">
                     <div>
@@ -169,14 +169,52 @@
                     </div>
                 </div> -->
 
-                <h1 id="myTargetElement">0</h1>
-                <button onclick="demo.start()">Start</button>
-                <button onclick="demo.reset()">Reset</button>
-                <button onclick="demo.pauseResume()">Pause/Resume</button>
+                <div class="counter-container">
+                    <div class="counter-box">
+                        <span id="counter1">0</span>
+                        <p>anos de experiência</p>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="counter-box">
+                        <span id="counter2">0</span>
+                        <p>alunos</p>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="counter-box">
+                        <span id="counter3">0</span>
+                        <p>máquinas</p>
+                    </div>
+                </div>
+
             </article>
         </section>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const options = { duration: 2.5, separator: "." };
+
+            const counter1 = new countUp.CountUp("counter1", 9, options);
+            const counter2 = new countUp.CountUp("counter2", 2000, options);
+            const counter3 = new countUp.CountUp("counter3", 20, options);
+
+            if (!counter1.error) {
+                counter1.start();
+                counter2.start();
+                counter3.start();
+            } else {
+                console.error(counter1.error);
+            }
+        });
+
+    </script>
+
+
     <script src="public/js/scripts.js"></script>
+
+    <!-- <script src="public/vendors/dist/countUp.js"></script> -->
 
     <script src="https://kit.fontawesome.com/bedd2811b0.js" crossorigin="anonymous"></script>
 
@@ -190,20 +228,6 @@
         AOS.init(); 
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
-
-    <script>
-        let demo = new CountUp('myTargetElement', 100, {
-            duration: 2, // duração da animação (em segundos)
-            separator: '.', // separador de milhares
-        });
-
-        if (!demo.error) {
-            demo.start();
-        } else {
-            console.error(demo.error);
-        }
-    </script>
 </body>
 
 </html>
