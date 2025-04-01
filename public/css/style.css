@@ -306,7 +306,6 @@ header {
 
                     p {
                         padding: 10px 0 15px 0;
-
                         color: var(--light);
                         font-family: var(--font_primary);
                         text-indent: initial;
@@ -387,41 +386,43 @@ header {
                     p {
                         text-transform: uppercase;
                         color: var(--light);
+                        font-family: var(--font_primary);
                         font-size: 16pt;
-                        font-weight: 100;
+                        font-weight: 300;
                     }
                 }
             }
         }
+
+        .counter-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+
+            .counter-box {
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                position: relative;
+
+                p {
+                    color: white;
+                    font-family: var(--font_titles);
+                }
+            }
+
+            .counter-box span {
+                font-size: 32px;
+                color: white;
+                font-family: var(--font_titles);
+            }
+
+            .separator {
+                width: 2px;
+                height: 50px;
+                background-color: var(--strong_red);
+                margin: 0 25px;
+            }
+        }
     }
-}
-
-/* .counter-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    font-size: 2em;
-    font-weight: bold;
-} */
-
-.counter-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.counter-box {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    position: relative;
-}
-.counter-box span {
-    font-size: 32px;
-    color: #f00;
-}
-.separator {
-    width: 2px;
-    height: 50px;
-    background-color: #900;
-    margin: 0 25px;
 }
