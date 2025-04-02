@@ -264,7 +264,6 @@ header {
             }
         }
     }
-
 }
 
 .sobre_nos {
@@ -329,6 +328,13 @@ header {
                         margin: 0 0 15px 0;
                         font-size: 20px;
                     }
+
+                    p:hover {
+                        transition: all 0.5s ease-in-out;
+                        color: var(--medium_red);
+                        transition: transform 1s;
+                        transform: scale(1.05);
+                    }
                 }
             }
 
@@ -338,6 +344,7 @@ header {
                     display: inline-block;
                     width: 370px;
                     height: 370px;
+                    overflow: hidden;
 
                     .main-image {
                         width: 100%;
@@ -345,9 +352,10 @@ header {
                         display: block;
                         position: relative;
                         z-index: 2;
+                        transition: transform 0.3s ease-in-out;
                     }
 
-                    &::before {
+                    .bg-before {
                         content: "";
                         position: absolute;
                         top: -30px;
@@ -357,9 +365,11 @@ header {
                         background: url("../img/background_ponts.svg") no-repeat;
                         background-size: cover;
                         z-index: 1;
+                        transition: transform 0.3s ease-in-out;
+                        opacity: 1;
                     }
 
-                    &::after {
+                    .bg-after {
                         content: "";
                         position: absolute;
                         bottom: -20px;
@@ -369,6 +379,22 @@ header {
                         background: url("../img/background_red.svg") no-repeat;
                         background-size: cover;
                         z-index: 0;
+                        transition: transform 0.3s ease-in-out;
+                        opacity: 1;
+                    }
+
+                    &:hover {
+                        .main-image {
+                            transform: translate(5px, 5px);
+                        }
+
+                        &::before {
+                            transform: translate(-50px, -50px);
+                        }
+
+                        &::after {
+                            transform: translate(50px, 50px);
+                        }
                     }
                 }
 
