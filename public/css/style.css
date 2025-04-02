@@ -388,10 +388,16 @@ header {
                     }
 
                     &:hover {
-                        /* .main-image {
-                            transform: translate(5px, 5px);
-                        } */
-/* 
+                        .main-image.hvr-grow-rotate {
+                            transition: transform 0.3s ease-in-out;
+                        }
+
+                        .main-image.hvr-grow-rotate:hover {
+                            -webkit-transform: scale(0.5) rotate(1deg);
+                            transform: scale(1.1) rotate(2deg);
+                        }
+
+                        /* 
                         &.bg-before {
                             transform: translate(-50px, -50px);
                         }
