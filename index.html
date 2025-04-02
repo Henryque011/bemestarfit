@@ -138,16 +138,23 @@
                         </div>
                     </div>
                     <div class="sobre_img">
-                        <div class="imagem-container">
-                            <img src="public/img/sobre_img1.svg" alt="Foto de treino" class="main-image">
+                        <div class="imagem-container" data-aos="fade-up">
+                            <div class="bg-before" data-aos="fade-right" data-aos-delay="200"></div>
+                            <div class="bg-after" data-aos="fade-left"  data-aos-delay="400"></div>
+                            <img src="public/img/sobre_img1.svg" alt="Foto de treino" class="main-image"
+                                data-aos="zoom-in" data-aos-delay="600">
                         </div>
+
+                        <!-- <img class="main-image" src="minha-imagem.jpg" alt="Imagem">
+
+                        <div class="imagem-container" data-aos="fade-up"> -->
+                        <!-- </div> -->
                         <div>
                             <p>"ótimo lugar para treinar e evoluir"</p>
                         </div>
                     </div>
                 </div>
                 <div class="space"></div>
-
                 <div class="counter-container" data-aos="fade-up" data-aos-duration="3000">
                     <div class="counter-box">
                         <p>
@@ -170,7 +177,6 @@
                         <p>máquinas</p>
                     </div>
                 </div>
-
                 <div class="space"></div>
                 <img src="public/img/background_ponts.svg" alt="">
             </article>
@@ -197,7 +203,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const options = { duration: 5.5, separator: "." };
+            const options = { duration: 4.5, separator: "." };
 
             const counter1 = new countUp.CountUp("counter1", 9, options);
             const counter2 = new countUp.CountUp("counter2", 2000, options);
@@ -210,6 +216,14 @@
             } else {
                 console.error(counter1.error);
             }
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 1000, // Tempo da animação (1s)
+            easing: "ease-in-out", // Suavização
+            once: false // Permite repetir a animação ao rolar a página
         });
     </script>
 
