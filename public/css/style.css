@@ -468,8 +468,31 @@ header {
 }
 
 .aulas {
-    background-image: url(../img/background_aulas.svg);
-    .site {
+    background-image: url(../img/bg_aulas.svg);
 
+    .space {
+        padding: 50px;
+    }
+
+    .site {
+        .titles_aulas {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-size: 18pt;
+                font-family: var(--font_titles);
+                color: var(--light);
+            }
+
+            h3 {
+                font-size: 48pt;
+                font-family: var(--font_titles);
+                color: white;
+                margin:  0 0 5px 0;
+            }
+        }
     }
 }
