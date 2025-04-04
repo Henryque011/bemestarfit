@@ -26,19 +26,19 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Planos</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a class="active hvr-underline-from-left" href="#">Home</a></li>
+                        <li><a class="hvr-underline-from-left" href="#">Sobre nós</a></li>
+                        <li><a class="hvr-underline-from-left" href="#">Planos</a></li>
+                        <li><a class="hvr-underline-from-left" href="#">Galeria</a></li>
+                        <li><a class="hvr-underline-from-left" href="#">Contato</a></li>
                     </ul>
                 </nav>
                 <div>
                     <div class="matricula">
-                        <a href="#">Matricule-se</a>
+                        <a class="hvr-underline-from-left" href="#">Matricule-se</a>
                     </div>
                     <div class="login">
-                        <a href="#">Login<i class="fa-solid fa-user"></i></a>
+                        <a class="hvr-underline-from-left" href="#">Login<i class="fa-solid fa-user"></i></a>
                     </div>
                 </div>
             </div>
@@ -51,9 +51,10 @@
                 <div class="side">
                     <div class="redes_sociais">
                         <ul>
-                            <li><a href="#"><i class="fa-solid fa-map-location-dot"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a class="hvr-float-shadow" href="#"><i class="fa-solid fa-map-location-dot"></i></a>
+                            </li>
+                            <li><a class="hvr-float-shadow" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a class="hvr-float-shadow" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                         </ul>
                     </div>
                     <div class="titles_banner">
@@ -117,7 +118,7 @@
             <div class="space"></div>
             <article class="site">
                 <div class="side">
-                    <div class="sobre_txt">
+                    <div class="sobre_txt" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <div>
                             <div class="line"></div>
                             <h2>sobre nós</h2>
@@ -131,31 +132,32 @@
                                 accusantium velit sit incidunt dignissimos corporis facere, laboriosam odio perspiciatis
                                 aperiam nesciunt repellat. Necessitatibus repudiandae quasi veritatis et!</p>
                         </div>
+
                         <div>
                             <p><i class="fa-solid fa-check-double"></i> 10 anos de expêriencia</p>
                             <p><i class="fa-solid fa-check-double"></i> Treino de qualidade</p>
                             <p><i class="fa-solid fa-check-double"></i> Trabalho de qualidade</p>
                         </div>
                     </div>
-                    <div class="sobre_img">
-                        <div class="imagem-container">
-                            <div class="bg-before" data-aos="fade-right" data-aos-delay="200"></div>
-                            <div class="bg-after" data-aos="fade-left" data-aos-delay="600"></div>
+                    <div class="sobre_img" data-aos="fade-left">
+                        <div class="imagem-container" data-aos="fade-left" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
+                            <div class="bg-before" data-aos="fade-right" data-aos-delay="200"
+                                data-aos-easing="ease-in-sine"></div>
+
+                            <div class="bg-after" data-aos="fade-left" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"></div>
+
                             <img src="public/img/sobre_img1.svg" alt="Foto de treino" class="main-image hvr-grow-rotate"
-                                data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                                data-aos="fade-right" data-aos-duration="1000" data-aos-delay="5000">
                         </div>
-
-                        <!-- <img class="main-image" src="minha-imagem.jpg" alt="Imagem">
-
-                        <div class="imagem-container" data-aos="fade-up"> -->
-                        <!-- </div> -->
                         <div>
                             <p>"ótimo lugar para treinar e evoluir"</p>
                         </div>
                     </div>
                 </div>
                 <div class="space"></div>
-                <div class="counter-container" data-aos="fade-up" data-aos-duration="3000">
+                <div class="counter-container" data-aos="fade-up" data-aos-duration="1000">
                     <div class="counter-box">
                         <p>
                             + <span id="counter1">0</span>
@@ -178,7 +180,13 @@
                     </div>
                 </div>
                 <div class="space"></div>
-                <img src="public/img/background_ponts.svg" alt="">
+            </article>
+        </section>
+
+        <section class="aulas">
+            <article class="site">
+                <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, nihil illo et quia non sunt ullam laboriosam provident perspiciatis dicta. Fuga eos iure eius commodi totam ullam ad eaque a.</p></div>
+
             </article>
         </section>
     </main>
@@ -186,8 +194,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
 
     <script src="public/js/scripts.js"></script>
-
-    <!-- <script src="public/vendors/dist/countUp.js"></script> -->
 
     <script src="https://kit.fontawesome.com/bedd2811b0.js" crossorigin="anonymous"></script>
 
@@ -203,7 +209,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const options = { duration: 4.5, separator: "." };
+            const options = { duration: 2.5, separator: "." };
 
             const counter1 = new countUp.CountUp("counter1", 9, options);
             const counter2 = new countUp.CountUp("counter2", 2000, options);
