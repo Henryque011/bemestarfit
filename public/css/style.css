@@ -491,7 +491,21 @@ header {
                 font-size: 48pt;
                 font-family: var(--font_titles);
                 color: white;
-                margin:  0 0 5px 0;
+                margin: 0 0 5px 0;
+            }
+        }
+
+        .side {
+            .box_aulas {
+                width: 450px;
+                height: 450px;
+                /* background: red;; */
+                border-radius: 5px;
+
+                img {
+                    height: 450px;
+                    border-radius: 5px;
+                }
             }
         }
     }
