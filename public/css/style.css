@@ -507,13 +507,14 @@ header {
                     width: 100%;
                     height: auto;
                     display: block;
+                    border-radius: 5px;
                 }
 
                 .con {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%, 210%);
+                    transform: translate(-50%, 160%);
                     text-align: center;
                     color: white;
                     padding: 10px 20px;
@@ -521,49 +522,50 @@ header {
 
                     h4 {
                         font-size: 21pt;
-                        text-transform: uppercase;
                         font-family: var(--font_titles);
                         position: relative;
                         z-index: 2;
-                        transition: transform 0.4s ease, letter-spacing 0.3s ease;
+                        transition: transform 0.5s ease, letter-spacing 0.5s ease;
                     }
 
                     .line {
                         width: 0;
                         height: 2px;
-                        background-color: white;
+                        background-color: var(--medium_red);
                         margin: 8px auto;
-                        transition: width 0.4s ease;
+                        transition: width 0.5s ease;
                     }
 
                     .arrow {
                         opacity: 0;
-                        transform: translateY(-10px);
-                        font-size: 20px;
-                        transition: all 0.4s ease;
-                    }
+                        transform: translateY(-15px);
+                        font-size: x-large;
+                        transition: all 0.5s ease;
+                        font-weight: bolder;
 
-                    &:hover {
-                        h4 {
-                            transform: translateY(-3px) scale(1.02);
-                            letter-spacing: 1px;
-                        }
-
-                        .line {
-                            width: 150px;
-                        }
-
-                        .arrow {
-                            opacity: 1;
-                            transform: translateY(0);
+                        a {
+                            text-decoration: none;
+                            color: #ffffff;
                         }
                     }
                 }
 
-            }
+                &:hover .con {
+                    h4 {
+                        transform: translateY(-3px) scale(1.02);
+                        letter-spacing: 3px;
+                        filter: drop-shadow(2px 4px 4px #d135359f);                    }
 
+                    .line {
+                        width: 280px;
+                    }
+
+                    .arrow {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
         }
     }
-}
-}
 }
