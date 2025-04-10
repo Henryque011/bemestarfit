@@ -57,6 +57,12 @@ header {
     padding: 10px;
 }
 
+h2 {
+    font-size: 20pt;
+    font-family: var(--font_titles);
+    color: var(--light);
+}
+
 .site {
     margin: 0 auto;
     max-width: 1200px;
@@ -491,7 +497,7 @@ header {
                 font-size: 48pt;
                 font-family: var(--font_titles);
                 color: white;
-                margin: 0 0 5px 0;
+                margin: 0 0 30px 0;
             }
         }
 
@@ -508,6 +514,7 @@ header {
                     height: auto;
                     display: block;
                     border-radius: 5px;
+                    filter: opacity(80%);
                 }
 
                 .con {
@@ -554,7 +561,8 @@ header {
                     h4 {
                         transform: translateY(-3px) scale(1.02);
                         letter-spacing: 3px;
-                        filter: drop-shadow(2px 4px 4px #d135359f);                    }
+                        filter: drop-shadow(2px 4px 4px #d135359f);
+                    }
 
                     .line {
                         width: 280px;
