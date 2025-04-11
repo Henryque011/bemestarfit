@@ -14,6 +14,7 @@
     --strong_red: #F20519;
     --medium_red: #F20530;
     --transparent_red: rgba(242, 5, 25, 0.5);
+    --bg_vinho: #44060B;
     --light: #F2F2F2;
 }
 
@@ -572,6 +573,35 @@ h2 {
                         opacity: 1;
                         transform: translateY(0);
                     }
+                }
+            }
+        }
+
+        .depoimento {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                margin: 0 0 30px 0;
+            }
+
+            .box {
+                display: flex;
+                width: 370px;
+                height: 240px;
+                border-radius: 20px;
+                background-color: var(--bg_vinho);
+
+                .wall {
+                    align-items: start;
+                    height: 100%;
+                    width: 50px;
+                    border-radius: 20px;
+                    margin-right: 20px;
+                    background: var(--strong_red);
                 }
             }
         }
