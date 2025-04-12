@@ -590,7 +590,7 @@ h2 {
 
             .box {
                 display: flex;
-                width: 370px;
+                width: 380px;
                 height: 240px;
                 border-radius: 20px;
                 background-color: var(--bg_vinho);
@@ -602,6 +602,19 @@ h2 {
                     border-radius: 20px;
                     margin-right: 20px;
                     background: var(--strong_red);
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    img {
+                        margin: 0 0 0 5px;
+                        filter: drop-shadow(0 0 0.75rem crimson);
+                    }
+                }
+
+                div:nth-child(2) {
+                    display: flex;
+                    justify-content: center;
                 }
             }
         }
