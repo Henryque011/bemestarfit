@@ -615,6 +615,12 @@ h2 {
                 div:nth-child(2) {
                     display: flex;
                     justify-content: center;
+                    align-items: center;
+                    margin: 0 0 0 50px;
+
+                    p {
+                        color: white;
+                    }
                 }
             }
         }
