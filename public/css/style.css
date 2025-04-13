@@ -476,6 +476,7 @@ h2 {
 
 .aulas {
     background-image: url(../img/bg_aulas.svg);
+    background-position: center;
 
     .space {
         padding: 50px;
@@ -650,12 +651,16 @@ h2 {
                     .comentario {
                         width: 250px;
                         height: auto;
-                        margin-top: 5px;
+                        margin-top: 10px;
 
                         p {
                             color: white;
                             width: 100%;
                             font-size: medium;
+                            text-align: center;
+                            text-indent: 5px;
+                            word-spacing: 2px;
+                            white-space: initial;
                             font-family: var(--font_primary);
                         }
                     }
