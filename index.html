@@ -13,6 +13,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="public/vendors/hover/css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="public/vendors/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="public/vendors/slick/slick-theme.css" />
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/style.css">
 </head>
@@ -186,7 +188,6 @@
             <div class="space"></div>
             <article class="site">
                 <div class="titles_aulas">
-                    <h2>nossos serviços</h2>
                     <h3>nossas <span class="emphasis">aulas</span></h3>
                 </div>
                 <div class="side">
@@ -210,8 +211,10 @@
                     </div>
                 </div>
                 <div class="space"></div>
-                <div class="depoimento">
+                <div class="titles_aulas">
                     <h2>o que os nossos alunos <span class="emphasis">dizem?</span></h2>
+                </div>
+                <div class="depoimento">
                     <div class="box">
                         <div class="wall"><img src="public/img/ronnie.png" alt=""></div>
                         <div class="container">
@@ -232,52 +235,73 @@
                                     unde porro. Unde aliquam nesciunt id voluptatem.</p>
                             </div>
                         </div>
-
-                        <div class="box">
-                            <div class="wall"><img src="public/img/ronnie.png" alt=""></div>
-                            <div class="container">
-                                <div class="side">
-                                    <div>
-                                        <p>Ronnie Coleman</p>
-                                        <p><span class="emphasis">Aluno desde 2021</span></p>
-                                    </div>
-                                    <div>
-                                        <img src="public/img/aspas.svg" alt="">
-                                    </div>
+                    </div>
+                    <div class="box">
+                        <div class="wall"><img src="public/img/cbum.svg" alt=""></div>
+                        <div class="container">
+                            <div class="side">
+                                <div>
+                                    <p>Ronnie Coleman</p>
+                                    <p><span class="emphasis">Aluno desde 2021</span></p>
                                 </div>
-
-                                <div class="comentario">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae
-                                        cupiditate
-                                        nemo adipisci, at porro! Obcaecati laborum nobis porro sapiente, est sunt?
-                                        Laboriosam,
-                                        unde porro. Unde aliquam nesciunt id voluptatem.</p>
+                                <div>
+                                    <img src="public/img/aspas.svg" alt="">
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="box">
-                            <div class="wall"><img src="public/img/ronnie.png" alt=""></div>
-                            <div class="container">
-                                <div class="side">
-                                    <div>
-                                        <p>Ronnie Coleman</p>
-                                        <p><span class="emphasis">Aluno desde 2021</span></p>
-                                    </div>
-                                    <div>
-                                        <img src="public/img/aspas.svg" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="comentario">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae
-                                        cupiditate
-                                        nemo adipisci, at porro! Obcaecati laborum nobis porro sapiente, est sunt?
-                                        Laboriosam,
-                                        unde porro. Unde aliquam nesciunt id voluptatem.</p>
-                                </div>
+                            <div class="comentario">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae
+                                    cupiditate
+                                    nemo adipisci, at porro! Obcaecati laborum nobis porro sapiente, est sunt?
+                                    Laboriosam,
+                                    unde porro. Unde aliquam nesciunt id voluptatem.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="box">
+                        <div class="wall"><img src="public/img/tomplatz.png" alt=""></div>
+                        <div class="container">
+                            <div class="side">
+                                <div>
+                                    <p>Ronnie Coleman</p>
+                                    <p><span class="emphasis">Aluno desde 2021</span></p>
+                                </div>
+                                <div>
+                                    <img src="public/img/aspas.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="comentario">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae
+                                    cupiditate
+                                    nemo adipisci, at porro! Obcaecati laborum nobis porro sapiente, est sunt?
+                                    Laboriosam,
+                                    unde porro. Unde aliquam nesciunt id voluptatem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="wall"><img src="public/img/tomplatz.png" alt=""></div>
+                        <div class="container">
+                            <div class="side">
+                                <div>
+                                    <p>Ronnie Coleman</p>
+                                    <p><span class="emphasis">Aluno desde 2021</span></p>
+                                </div>
+                                <div>
+                                    <img src="public/img/aspas.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="comentario">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae
+                                    cupiditate
+                                    nemo adipisci, at porro! Obcaecati laborum nobis porro sapiente, est sunt?
+                                    Laboriosam,
+                                    unde porro. Unde aliquam nesciunt id voluptatem.</p>
+                            </div>
+                        </div>
+                    </div>
             </article>
         </section>
 
@@ -285,7 +309,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
 
-    <script src="public/js/scripts.js"></script>
+
 
     <script src="https://kit.fontawesome.com/bedd2811b0.js" crossorigin="anonymous"></script>
 
@@ -324,6 +348,14 @@
             once: false // Permite repetir a animação ao rolar a página
         });
     </script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="puclic/vendors/slick/slick.min.js"></script>
+
+    <script src="public/js/scripts.js"></script>
 
 </body>
 
