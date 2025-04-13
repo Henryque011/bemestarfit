@@ -585,12 +585,13 @@ h2 {
             justify-content: center;
 
             h2 {
+                font-size: 48px;
                 margin: 0 0 30px 0;
             }
 
             .box {
                 display: flex;
-                width: 380px;
+                width: 370px;
                 height: 240px;
                 border-radius: 20px;
                 background-color: var(--bg_vinho);
@@ -612,14 +613,51 @@ h2 {
                     }
                 }
 
-                div:nth-child(2) {
+                .wall:hover {
+                    transition: all 0.5s ease-in-out;
+                    /* background-color: rgb(248, 42, 83); */
+                    background-color: white;
+                }
+
+                .container {
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    margin: 0 0 0 50px;
+                    margin: 25px;
+                    padding: 15px;
 
-                    p {
-                        color: white;
+                    .side {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        p {
+                            align-items: center;
+                            text-align: center;
+                            margin-top: 5px;
+                            color: white;
+                            font-size: medium;
+                            font-family: var(--font_primary);
+
+                            .emphasis {
+                                font-weight: bold;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+
+                    .comentario {
+                        width: 250px;
+                        height: auto;
+                        margin-top: 5px;
+
+                        p {
+                            color: white;
+                            width: 100%;
+                            font-size: medium;
+                            font-family: var(--font_primary);
+                        }
                     }
                 }
             }
