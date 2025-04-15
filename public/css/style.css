@@ -586,15 +586,17 @@ h2 {
         }
 
         .depoimento {
-            display: flex;
+            /* display: flex; */
             text-align: center;
             align-items: center;
             justify-content: space-between;
+            width: 100%;
 
             .box {
-                display: flex;
+                /* display: flex; */
                 width: 370px;
                 height: 240px;
+                /* flex-direction: row; */
                 border-radius: 20px;
                 background-color: var(--bg_vinho);
 
