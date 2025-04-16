@@ -1,9 +1,11 @@
+
 $(document).ready(function () {
-    $('.depoimento').slick({
-        infinite: true,
+    $('.teste').slick({
         slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: true
     });
 });
 
