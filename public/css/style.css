@@ -648,6 +648,7 @@ h2 {
                             color: white;
                             font-size: medium;
                             font-family: var(--font_primary);
+                            text-transform: capitalize;
 
                             .emphasis {
                                 font-weight: bold;
