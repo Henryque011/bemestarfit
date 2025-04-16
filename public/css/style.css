@@ -676,3 +676,14 @@ h2 {
         }
     }
 }
+
+.planos {
+    background-image: url(../img/backgrounplanos.png);
+    height: 600px;
+
+    .site {
+        .titles_aulas {
+            text-align: center;
+        }
+    }
+}
