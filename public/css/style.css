@@ -14,7 +14,7 @@
     --strong_red: #F20519;
     --medium_red: #F20530;
     --transparent_red: rgba(242, 5, 25, 0.5);
-    --bg_vinho: #44060B;
+    --bg_vinho: #44060bbb;
     --light: #F2F2F2;
 }
 
@@ -695,26 +695,29 @@ h2 {
             }
         }
 
-        .container {
-            width: 275px;
-            height: 580px;
-            background-color: var(--light);
-            border-radius: 5px;
-            padding: 0;
+        .box_planos {
 
-            div:nth-child(1) {
-                text-align: center;
-                p {
-                    display: flex;
-                    justify-content: center;
-                    
-                    position: absolute;
+            .card {
+
+                .image-container {
+                    position: relative;
                 }
 
-                img {
+                .image-label {
+                    position: absolute;
+                    top: 15px;
+                    left: 50%;
                     width: 100%;
-                    max-height: 170px;
+                    align-items: center;
+                    text-align: center;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    background-color: var(--bg_vinho);
+                    padding: 6px 12px;
                     border-radius: 5px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-family: var(--font_primary);
                 }
             }
         }
