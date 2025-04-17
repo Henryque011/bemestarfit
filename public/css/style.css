@@ -694,5 +694,29 @@ h2 {
                 font-size: 18pt;
             }
         }
+
+        .container {
+            width: 275px;
+            height: 580px;
+            background-color: var(--light);
+            border-radius: 5px;
+            padding: 0;
+
+            div:nth-child(1) {
+                text-align: center;
+                p {
+                    display: flex;
+                    justify-content: center;
+                    
+                    position: absolute;
+                }
+
+                img {
+                    width: 100%;
+                    max-height: 170px;
+                    border-radius: 5px;
+                }
+            }
+        }
     }
 }
