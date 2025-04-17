@@ -684,6 +684,15 @@ h2 {
     .site {
         .titles_aulas {
             text-align: center;
+
+            p {
+                margin-top: 10px;
+                color: var(--light);
+                padding: 20px;
+                font-family: var(--font_primary);
+                text-indent: initial;
+                font-size: 18pt;
+            }
         }
     }
 }
