@@ -805,6 +805,8 @@ h2 {
 }
 
 .footer {
+    background-image: url(../img/backgrounplanos.png);
+    /* position: absolute; */
     height: 200px;
     align-items: center;
     text-align: center;
@@ -818,7 +820,8 @@ h2 {
         /* border-color: #f00 #0f0 #00f #fc0; */
         border-width: 15px 30px 30px;
         border-radius: 145px 145px 0 0;
-    }
 
-    .site {}
+        .site {}
+
+    }
 }
