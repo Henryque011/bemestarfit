@@ -812,6 +812,7 @@ h2 {
     text-align: center;
 
     .box {
+        /* background-color: wheat; */
         background-color: var(--black);
         width: 100%;
         height: 200px;
@@ -841,8 +842,6 @@ h2 {
                         }
 
                         input {
-                            /* background-color: yellow; */
-                            /* margin: 10px; */
                             border: none;
                             width: 100%;
                             height: 100%;
@@ -865,11 +864,23 @@ h2 {
                             align-items: center;
                             justify-content: space-between;
                             font-family: var(--font_primary);
+                        }
+                    }
+                }
+            }
 
-                            i {
-                                /* background-color: red; */
-                                filter: drop-shadow(2px 4px 4px #d135359f);
-                            }
+            hr {
+                background-color: var(--strong_red);
+                height: 3px;
+                margin: 5px;
+            }
+
+            .links_footer {
+                .side {
+                    div{
+                        img {
+                            width: 50px;
+                            height: 50px;
                         }
                     }
                 }
