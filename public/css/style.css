@@ -54,6 +54,14 @@ header {
     color: var(--strong_red);
 }
 
+.robust {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font_primary);
+    margin-right: 5px;
+}
+
 .space {
     padding: 10px;
 }
@@ -875,6 +883,12 @@ h2 {
                     justify-content: space-between;
 
                     .box_column {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+
                         img {
                             width: 90px;
                             height: 90px;
@@ -901,22 +915,26 @@ h2 {
                                 }
                             }
                         }
-                    }
-
-                    .box_column {
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                        align-items: center;
-                        text-align: center;
 
                         p {
                             margin-top: 10px;
+                            color: white;
+                            font-family: var(--font_primary);
+                        }
 
+                        ul {
+                            list-style-image: url("../img/muscle-flex-outline-svgrepo-com.svg");
+                          
+                            color: white;
+                            li {
+                                p {
+                                    text-transform: capitalize;
+                                    text-decoration: dotted;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
