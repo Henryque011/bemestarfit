@@ -686,11 +686,11 @@ h2 {
 }
 
 .planos {
-    background-image: url(../img/backgrounplanos.png);
+    /* background-image: url(../img/backgrounplanos.png); */
     height: 750px;
-    background-position: bottom;
+    /* background-position: bottom;
     background-size: cover;
-    box-shadow: inset 10px 10px 10px 10px black;
+    box-shadow: inset 10px 10px 10px 10px black; */
     padding: 10px 0 0 0;
 
     .site {
