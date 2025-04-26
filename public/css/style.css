@@ -931,12 +931,21 @@ h2 {
                             width: 285px;
                         }
 
+                        .link_pages {
+                            display: flex;
+                            flex-direction: column;
+
+                            a {
+                                text-decoration: none;
+                                margin-top: 15px;
+                                color: white;
+                                font-family: var(--font_primary);
+                                text-transform: uppercase;
+                            }
+                        }
+
                         a {
                             text-decoration: none;
-                            margin-top: 15px;
-                            color: white;
-                            font-family: var(--font_primary);
-                            text-transform: uppercase;
                         }
 
                         .fa-list {
@@ -990,6 +999,7 @@ h2 {
 
             a {
                 text-decoration: none;
+
                 span {
                     color: red;
                 }
