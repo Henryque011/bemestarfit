@@ -687,10 +687,11 @@ h2 {
 
 .planos {
     /* background-image: url(../img/backgrounplanos.png); */
-    height: 750px;
     /* background-position: bottom;
     background-size: cover;
     box-shadow: inset 10px 10px 10px 10px black; */
+    height: 750px;
+
     padding: 10px 0 0 0;
 
     .site {
@@ -1006,4 +1007,10 @@ h2 {
             }
         }
     }
+}
+
+/* responsivo */
+
+@media (max-width: 1024px) {
+    
 }
