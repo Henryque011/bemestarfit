@@ -72,6 +72,14 @@ h2 {
     color: var(--light);
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.menu-lateral {
+    display: flex;
+}
+
 .site {
     margin: 0 auto;
     max-width: 1200px;
@@ -814,7 +822,7 @@ h2 {
 }
 
 .footer {
-    background-image: url(../img/backgrounplanos.png);
+    /* background-image: url(../img/backgrounplanos.png); */
     /* position: absolute; */
     height: 200px;
     align-items: center;
@@ -996,7 +1004,7 @@ h2 {
         h2 {
             text-transform: uppercase;
             font-family: var(--font_primary);
-            font-size: 14pt;
+            font-size: 12pt;
 
             a {
                 text-decoration: none;
@@ -1012,5 +1020,41 @@ h2 {
 /* responsivo */
 
 @media (max-width: 1024px) {
-    
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .menu-lateral {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        /* escondido fora da tela */
+        width: 250px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+        flex-direction: column;
+        padding: 2rem;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .menu-lateral.aberto {
+        left: 0;
+        /* mostra o menu */
+    }
+
+    .topo nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .topo>div:not(:first-child) {
+        display: none;
+        /* esconder botões extras fora do menu lateral */
+    }
 }
